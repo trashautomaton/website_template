@@ -2,8 +2,17 @@ $color-blue: blue;
 
 .projectname-app {
   &__container{
+    margin:auto;
     color: $color-blue;
     font-size: 2rem;
-    text-align: center;
+    display:flex;
+    width: 80%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    &__cat-picture{
+      object-fit:cover;
+    }
   }
 }
