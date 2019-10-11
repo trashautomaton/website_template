@@ -1,0 +1,9 @@
+$color-blue: blue;
+
+.projectname-app {
+  &__container{
+    color: $color-blue;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
