@@ -1,4 +1,4 @@
-const webpack = require('webpack'); 
+const webpack = require("webpack");
 
 module.exports = {
   entry: "./src/index.js",
@@ -12,18 +12,16 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ["*", ".js", ".jsx"]
   },
   output: {
     path: __dirname + "/public",
     publicPath: "/",
-    filename: 'bundle.js'
+    filename: "bundle.js"
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
+  plugins: [new webpack.HotModuleReplacementPlugin()],
   devServer: {
-    contentBase: './public',
+    contentBase: "./public",
     hot: true
   }
-}
+};

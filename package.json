@@ -4,8 +4,11 @@
   "description": "A website template with webpack and react as the base",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint . --ext .js",
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "npm run lint",
+    "prepush": "npm run lint"
   },
   "keywords": [],
   "author": {
@@ -25,6 +28,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react-hooks": "^2.1.2",
     "eslint-plugin-simple-import-sort": "^4.0.0",
+    "husky": "^3.0.8",
     "prettier": "1.18.2",
     "react-hot-loader": "^4.12.15",
     "webpack": "^4.41.0",
