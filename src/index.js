@@ -10,3 +10,7 @@ const title = "some react app";
 ReactDOM.render(<App title={title} />, document.getElementById("app"));
 
 module.hot.accept();
+
+//TODO
+/*add button mixin, add production build to web pack*/
+// add testing to webpack
